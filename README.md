@@ -16,7 +16,7 @@ It is made up of two scripts; a macro running on the video device and a python s
 * [Python script](https://github.com/dhenwood/Cisco-Video-FaceID/blob/main/main.py) - runs on a web server. <i>NOTE; this needs direct access to the video device, so cannot be placed on a public web server if the device is inside a corporate network</i>
 
 The following diagram illistrates the interactions of these two scripts, along with querying an image detection engine and posting the output to a Webex space.
-![alt text](https://github.com/dhenwood/Room-Monitor/blob/main/FlowDiagram.png?raw=true)
+![alt text](https://github.com/dhenwood/Cisco-Video-FaceID/blob/main/FaceIdMessageFlow.png))
 
 1. The macro running on the video device sends a POST message containing the username and password of the device.
 2. Using the username and password (from 1), the Python script requests a specific cookie from the device. The device returns this in a header.
