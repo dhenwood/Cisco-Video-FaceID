@@ -27,3 +27,9 @@ The following diagram illistrates the interactions of these two scripts, along w
 
 ## Setup
 The **Remote Monitoring** license key is **required** to be installed on the endpoint. The Remote Monitoring feature allows an administrator to monitor a room from the endpoint's web interface by getting snapshots from the camera sources connected to the endpoint. To purchase this license, the top level part code required is "**L-TP-RM**", after which you select the appropriate item for the respective device it will run on.
+
+As mentioned above, the Python script needs to run on a server that has direct access to the Cisco video device. It needs to be able to initiate HTTP POST/GET requests to the device.
+
+Once the [Macro](https://github.com/dhenwood/Cisco-Video-FaceID/blob/main/faceId.js) is installed on the Cisco video device, lines 4, 5 and 6 will need to be updated to reflect where the Python script is running along with the local username and password for the device.
+
+For the [Python script](https://github.com/dhenwood/Cisco-Video-FaceID/blob/main/main.py), you will need to browse to [MXFace](https://mxface.ai/) and create an account with a trial service. Once done, you will be able to obtain a Subscription Key (click your profile icon in top right, then My Subscription). Once you have the key, update line 10 to include the key. Alternate facial comparison services or Python libraries could equally be used instead.
