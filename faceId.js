@@ -113,11 +113,7 @@ function init(){
   xapi.status.get('SystemUnit Hardware Module SerialNumber').then ((value) => {
     deviceName = value // used for photo image being unique
     console.log("DeviceName: " + deviceName)
-
-    //performPhotoUpload();
-    //verifyFaceId();
-    //var checkMyCamera = checkCameraState();
-    //checkIfSavedImageExists();
+    
   })
 
   createLogoutPanel();
