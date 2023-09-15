@@ -3,11 +3,15 @@
 # Cisco-Video-FaceID
 
 * [Introduction](https://github.com/dhenwood/Cisco-Video-FaceID#introduction)
+* [Video](https://github.com/dhenwood/Cisco-Video-FaceID#video)
 * [Background](https://github.com/dhenwood/Cisco-Video-FaceID#background)
 * [Setup](https://github.com/dhenwood/Cisco-Video-FaceID#setup)
 
 ## Introduction
 The following code demonstrates the intelligent sensors inside Cisco video devices to detect a persons face and subsequently log them into a Cisco Video Device based on their face (similar to FaceID on iPhone).
+
+## Video
+A video of this is available on [VidCast](https://app.vidcast.io/share/23901f27-5683-4aaf-a86b-57ee0d995d63)
 
 ## Background
 It is made up of two scripts; a macro running on the video device and a python script. Whilst I originally had hoped to run all of this from a single macro; there were some limitations that prevented this - notably, the video device has a limit in the body of any POST message (and the size of the image exceeded this).
