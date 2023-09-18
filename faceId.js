@@ -14,9 +14,8 @@ const loopStop = 10;
 
 
 function verifyFaceId(){
-  // need a callback here. May have fixed it with call back in function
-  //var checkCameraLid = checkCameraState()
-  //if(checkCameraLid == "Open"){
+  //Need to add check for Remote Monitoring License Key installed
+  //Need to add check for Camera Lid == "Open"
     const faceIdServer = faceIdServerAddress + "/comparephoto?username=" + username + "&password=" + password + "&serialnumber=" + deviceName
     console.log("attempting to compare to: " + faceIdServer)
     progress()
@@ -142,7 +141,6 @@ function showProgresBar(stage, length, name, subtext = '', barSize) {
     //completeTitle = ', Complete!' 
     loopStart = 0;
     clearInterval(refreshInterval);
-    //performLogin();
     };
   let completeSubtext = subtext == '' ? '' : `${subtext}<p>`;
   if (stage == length && subtext != '') { completeSubtext = 'Successful, logging in.<p>' };
@@ -155,7 +153,7 @@ function showProgresBar(stage, length, name, subtext = '', barSize) {
 } 
 
 function progress(){
-  refreshInterval = setInterval(timer, 250); // check every 500msec
+  refreshInterval = setInterval(timer, 250); // check every 250msec
 }
 
 function timer(){
