@@ -14,7 +14,7 @@ The following code demonstrates the intelligent sensors inside Cisco video devic
 A video of this is available on [VidCast](https://app.vidcast.io/share/23901f27-5683-4aaf-a86b-57ee0d995d63)
 
 ## Background
-It is made up of two scripts; a macro running on the video device and a python script. Whilst I originally had hoped to run all of this from a single macro; there were some limitations that prevented this - notably, the video device has a limit in the body of any POST message (and the size of the image exceeded this).
+It is made up of two scripts; a macro running on the video device and a python script. Whilst I originally had hoped to run all of this from a single macro; there were some limitations that prevented this - notably, the video device has a limit in the body of any POST message (and the size of the image exceeded this). _Note: the method used to obtain the snapshot is not using a publicliy released API._
 
 * [Macro](https://github.com/dhenwood/Cisco-Video-FaceID/blob/main/faceId.js) - runs on the video device
 * [Python script](https://github.com/dhenwood/Cisco-Video-FaceID/blob/main/main.py) - runs on a web server. <i>NOTE; this needs direct access to the video device, so cannot be placed on a public web server if the device is inside a corporate network</i>
